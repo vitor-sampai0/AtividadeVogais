@@ -13,14 +13,12 @@ let arrayconsoante = []
 for(let i = 0; i < arrayletras.length; i++){
     if(vogais.includes(arrayletras[i])){
         arrayvogais.push(arrayletras[i]);
-    }
+        }
+        if(consoante.includes(arrayletras[i])){
+            arrayconsoante.push(arrayletras[i])
+        };
 }
 
-for(let f = 0; f < arrayletras.length; f++){
-    if(consoante.includes(arrayletras[f])){
-        arrayconsoante.push(arrayletras[f]);
-    }
-}
 
 console.log("texto original:", texto)
 console.log("vogais encontradas:", arrayvogais.toString());
